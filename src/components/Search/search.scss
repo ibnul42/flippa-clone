@@ -1,0 +1,111 @@
+.search {
+  margin: 70px 0px;
+
+  .search_main {
+    height: 70px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+
+    .container {
+      ul {
+        list-style: none;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+          margin: 5px 10px;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .keyword_search {
+    padding-top: 0 !important;
+  }
+
+  .search_text_font {
+    font-size: 14px;
+  }
+
+  .sort_option {
+    position: relative;
+
+    .sort_alias {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 165px;
+    }
+
+    .sort_option_popup {
+      display: none;
+      position: absolute;
+      top: 36px;
+      left: 68px;
+      background-color: #fff;
+      border-radius: 5px;
+      transition: all 0.2s ease-in;
+      min-width: 165px;
+
+      ul {
+        margin-bottom: 0px;
+        cursor: pointer;
+        padding: 2px 15px;
+
+        &:hover {
+          background-color: rgba(0, 88, 255, 0.7);
+          color: #fff;
+        }
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .show_item_option {
+      position: relative;
+    .item_to_show {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 150px;
+    }
+
+    .show_option_popup{
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: 12px;
+        min-width: 150px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all 0.2s ease-in;
+        ul {
+            margin-bottom: 0px;
+            cursor: pointer;
+            padding: 2px 15px;
+    
+            &:hover {
+              background-color: rgba(0, 88, 255, 0.7);
+              color: #fff;
+            }
+          }
+
+          &.active {
+            display: block;
+          }
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+.dashboard{
+    .container{
+        h2{
+            padding: 25px 0;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+
+            .left_menu{
+                width: 20%;
+                background-color: #fff;
+
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 10px 20px;
+
+                    p{
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                    }
+                    &.active{
+                        background-color: #1f3349;
+                        color: white;
+                    }
+                }
+            }
+
+            .right_menu{
+                // margin-bottom: 30px;
+                padding: 20px 0;
+                width: 76%;
+                background-color: #fff;
+                min-height: 350px;
+            }
+        }
+    }
+}

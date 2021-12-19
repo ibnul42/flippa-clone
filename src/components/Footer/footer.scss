@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 20px;
+  // position: absolute;
+  // bottom: 0;
+  div {
+    .logo {
+      h3 {
+        font-weight: 700;
+        font-size: 35px;
+      }
+    }
+    div {
+      div {
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+          li {
+            margin: 5px 15px;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
