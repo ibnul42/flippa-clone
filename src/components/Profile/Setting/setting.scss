@@ -1,0 +1,61 @@
+.setting{    
+    padding: 5px 30px;
+    h3 {
+        padding: 15px 0;
+    }
+    
+    .all_setting{
+        display: flex;
+        flex-direction: column;
+
+        .preference{
+            display: flex;
+            flex-direction: column;
+
+            .listing, .alert{
+                margin: 8px 0;
+                background-color: #EFF7FF;
+                display: flex;
+                padding: 10px 25px;
+
+                .icon{
+                    flex: 0.1;
+                    display: flex;
+                    justify-content: center;
+                    // align-items: center;
+                }
+
+                .info{
+                    flex: 0.9;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            
+        }
+
+        .alert, .request_data, .close_account{
+            margin: 15px 0;
+            padding: 0;
+        }
+    }
+}
+
+form{
+    .checkbox_item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        input{
+            cursor: pointer;
+        }
+
+        label{
+            margin-left: 8px;
+            font-size: 14px;
+        }
+    }
+}

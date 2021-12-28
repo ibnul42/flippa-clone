@@ -6,29 +6,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        a{
-            text-decoration: none;
-            color: #63707E;
-            border: 1px solid #63707E;
-            border-radius: 5px;
-            padding: 0.5rem 1rem;
-            transition: all 0.15s ease-in-out;
-
-            &:hover{
-                background-color: #63707E;
-                color: #fff;
-
-            }
-        }
     }
 
     .menu_items{
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         .menu{
             flex: 0.5;
+            margin-bottom: 15px;
 
             a{
                 color: #63707E;

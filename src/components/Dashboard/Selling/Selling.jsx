@@ -4,7 +4,7 @@ import Bid from "./Bid/Bid";
 import Draft from "./Draft/Draft";
 import Listing from "./Listing/Listing";
 import Offer from "./Offer/Offer";
-import "./selling.scss"
+import "./selling.scss";
 
 function Selling() {
     const [listing, setListing] = useState(true);

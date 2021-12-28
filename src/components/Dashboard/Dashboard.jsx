@@ -4,13 +4,24 @@ import { MdOutlineSell, MdOutlineCreditScore } from 'react-icons/md';
 import { AiOutlineEye } from 'react-icons/ai';
 import { GiCloverSpiked } from 'react-icons/gi';
 import { FiMail } from 'react-icons/fi';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Overview from './Overview/Overview';
 import Message from './Message/Message';
 import Selling from './Selling/Selling';
 import Invoice from './Invoice/Invoice';
+import Watching from './Watching/Watching';
+import Buying from './Buying/Buying';
+import { useLocation, useParams, useSearchParams } from 'react-router-dom';
+import queryString from 'query-string';
 
 function Dashboard() {
+
+    const [searchParams, setSearchparams] = useSearchParams();
+    const searchTerm = searchParams.get('myStr') || '';
+
+    
+
+    
 
     const [overviewSection, setOverviewSection] = useState(true);
     const [messagesSection, setMessagesSection] = useState(false);
@@ -18,6 +29,26 @@ function Dashboard() {
     const [invoicesSection, setInvoicesSection] = useState(false);
     const [watchingSection, setWatching] = useState(false);
     const [buyingSection, setBuyingSection] = useState(false);
+
+    useEffect(() => {
+        if(searchTerm === 'Messages'){
+            setMessagesSection(!messagesSection);
+            setOverviewSection(false);
+            setSellingSection(false);
+            setInvoicesSection(false);
+            setBuyingSection(false);
+            setWatching(false);
+        } else if (searchTerm === "Watching") {
+            setMessagesSection(false);
+            setOverviewSection(false);
+            setSellingSection(false);
+            setInvoicesSection(false);
+            setBuyingSection(false);
+            setWatching(!watchingSection);
+        }
+    },[searchTerm])
+
+    
 
     const activeSectionHandler = (section) => {
         if (section === "Overview") {
@@ -101,6 +132,8 @@ function Dashboard() {
                          messagesSection ? <Message /> :
                          sellingSection ? <Selling /> :
                          invoicesSection ? <Invoice /> :
+                         watchingSection ? <Watching /> :
+                         buyingSection ? <Buying /> :
                          <Overview />}
                     </div>
                 </div>

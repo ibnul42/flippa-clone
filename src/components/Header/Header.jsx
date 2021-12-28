@@ -73,13 +73,13 @@ const Header = () => {
                                         <Link to="/user/dashboard">Dashboard</Link>
                                     </ul>
                                     <ul onClick={() => setUserMenu(false)}>
-                                        <Link to="!#">My Account</Link>
+                                        <Link to="/user/profile">My Account</Link>
                                     </ul>
                                     <ul onClick={() => setUserMenu(false)}>
-                                        <Link to="!#">Messages</Link>
+                                        <Link to="/user/dashboard?myStr=Messages">Messages</Link>
                                     </ul>
                                     <ul onClick={() => setUserMenu(false)}>
-                                        <Link to="!#">Watched Listing</Link>
+                                        <Link to="/user/dashboard?myStr=Watching">Watched Listing</Link>
                                     </ul>
                                     <ul onClick={() => setUserMenu(false)}>
                                         <Link to="!#">Sign Out</Link>

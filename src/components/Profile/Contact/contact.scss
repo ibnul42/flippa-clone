@@ -1,0 +1,83 @@
+.contact{
+    padding: 5px 30px;
+    width: 70%;
+    h3 {
+        padding: 15px 0;
+    }
+
+    .photo_section{
+        display: flex;
+        align-items: center;
+
+        .img_container{
+            height: 85px;
+            width: 85px;
+            background-color: gray;
+            border-radius: 999px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 100%;
+            }
+        }
+
+        input{
+            margin-left: 25px;
+        }
+    }
+    form{
+        .group{
+            margin: 10px 0;
+            margin: 8px 0;
+            background-color: #EFF7FF;
+            display: flex;
+            padding: 10px 25px;
+        
+            .icon{
+                flex: 0.1;
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+            }
+        
+            .info{
+                flex: 0.9;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        input, select {
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ced4da;
+            padding: 10px 15px;
+
+            &:focus-visible{
+                border: 1px solid #ced4da;
+            }
+        }
+
+        h6{
+            margin: 10px 0;
+        }
+        
+    }
+}
+
+.checkbox_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    input{
+        cursor: pointer;
+    }
+
+    label{
+        margin-left: 8px;
+        font-size: 14px;
+    }
+}

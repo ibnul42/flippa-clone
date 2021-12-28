@@ -1,0 +1,55 @@
+.profile{
+    .container{
+        h2{
+            padding: 25px 0;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+
+            .left_menu{
+                width: 20%;
+                background-color: #fff;
+                height: fit-content;
+
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 10px 20px;
+
+                    p{
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                    }
+                    &.active{
+                        background-color: #1f3349;
+                        color: white;
+                    }
+                }
+            }
+
+            .right_menu{
+                // margin-bottom: 30px;
+                padding: 20px 0;
+                width: 76%;
+                background-color: #fff;
+                min-height: 350px;
+            }
+        }
+    }
+}
+
+.btn_style{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #323a99;
+    cursor: pointer;  
+    &.close{
+        background-color: #63707E;
+    }  
+}

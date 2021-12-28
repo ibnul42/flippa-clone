@@ -1,5 +1,10 @@
 .container{
     padding: 5px 30px;
-    
 
+    .message_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }   
 }
