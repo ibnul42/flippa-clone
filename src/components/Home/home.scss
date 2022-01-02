@@ -1,5 +1,9 @@
 @import "../../../global.scss";
 
+.bg-grad-cus{
+    background: rgb(255,71,122);
+    background: linear-gradient(90deg, rgba(255,71,122,1) 0%, rgba(6,71,202,1) 95%);
+}
 .home{
 
     .submenu{
