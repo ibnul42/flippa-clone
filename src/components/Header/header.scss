@@ -178,21 +178,22 @@
             .active {
               display: flex;
             }
-          }
-
-          button {
-            margin-left: 15px;
-            padding: 10px 15px;
-            background-color: rgb(255, 132, 100);
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            cursor: pointer;
-
-            &:hover {
-              background-color: rgb(252, 114, 79);
+            &.btn_sell {
+              margin-left: 15px;
+              padding: 10px 15px;
+              background-color: rgb(255, 132, 100);
+              border: none;
+              border-radius: 5px;
+              color: #fff;
+              cursor: pointer;
+  
+              &:hover {
+                background-color: rgb(252, 114, 79);
+              }
             }
           }
+
+          
 
           .person_list {
             display: flex;

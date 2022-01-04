@@ -62,7 +62,9 @@ const Header = () => {
                             <li>
                                 <Link to="/login">Sign In</Link>
                             </li>
-                            <button>Sell Now</button>
+                            <li className="btn_sell">
+                                <Link to="/sell">Sell Now</Link>
+                            </li>
                             <div className="person_list">
                                 <div className="user_Person" onClick={() => setUserMenu(!userMenu)}>
                                     <BsFillPersonFill />

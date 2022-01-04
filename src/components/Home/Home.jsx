@@ -96,10 +96,10 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 text-center">
+                        {/* <div className="col-lg-5 text-center">
                             <iframe width="420" height="275" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                             </iframe>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

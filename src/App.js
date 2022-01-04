@@ -9,6 +9,7 @@ import Register from './components/Register/Register';
 import Dashboard from './components/Dashboard/Dashboard';
 import Profile from './components/Profile/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Sell from './components/Sell/Sell';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/user/dashboard" element={<Dashboard />} />
         <Route path="/user/profile" element={<Profile />} />
+        <Route path="/sell" element={<Sell />} />
       </Routes>
       </div>
 
