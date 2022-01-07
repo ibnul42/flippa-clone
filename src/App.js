@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Profile from './components/Profile/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Sell from './components/Sell/Sell';
+import ProductListing from './components/ProductListing/ProductListing';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/user/dashboard" element={<Dashboard />} />
         <Route path="/user/profile" element={<Profile />} />
         <Route path="/sell" element={<Sell />} />
+        <Route path="/product/:id" element={<ProductListing />} />
       </Routes>
       </div>
 

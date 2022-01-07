@@ -101,6 +101,10 @@
           color: #fff;
           background-color: #323a99;
           cursor: pointer;
+          a{
+            text-decoration: none;
+            color: inherit;
+          }
         }
       }
     }

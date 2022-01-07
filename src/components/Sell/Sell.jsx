@@ -10,7 +10,7 @@ function Sell() {
                 <h5 class="text-center text-muted pt-1 mb-5">300,000+ buyers are waiting</h5>
             </div>
 
-            <div class="container m-2">
+            <div class="container-up-xl">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <form accept-charset="UTF-8">

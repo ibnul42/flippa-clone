@@ -1,6 +1,7 @@
 import "./product.scss";
 import { BsYoutube } from 'react-icons/bs';
 import { FiCrop } from 'react-icons/fi';
+import { Link } from "react-router-dom";
 
 const Product = () => {
     return (
@@ -38,7 +39,9 @@ const Product = () => {
                     </div>
                     <div className="buttons_all">
                         <button type="button" className="wacth_btn">Watch</button>
-                        <button type="button" className="view_btn">View Listing</button>
+                        <button type="button" className="view_btn">
+                            <Link to={`/product/${1}`}>View Listing</Link>
+                        </button>
                     </div>
 
                 </div>
